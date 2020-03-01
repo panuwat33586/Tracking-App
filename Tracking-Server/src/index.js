@@ -17,7 +17,8 @@ const mongoUri=
 'mongodb+srv://panuwat33586:xialmiao@cluster0-r82tl.gcp.mongodb.net/test?retryWrites=true&w=majority'
 mongoose.connect(mongoUri,{
     useNewUrlParser:true,
-    useCreateIndex:true
+    useCreateIndex:true,
+    useUnifiedTopology: true,
 });
 mongoose.connection.on('connected',()=>{
     console.log('Connected to mongo instance')
