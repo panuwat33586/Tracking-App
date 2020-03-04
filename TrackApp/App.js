@@ -13,6 +13,8 @@ const switchNavigator=createSwitchNavigator({
        loginFlow:createStackNavigator({
          Signup:SignupScreen,
          Signin:SigninScreen
+       },{
+        headerMode:'none'
        }),
        mainFlow:createBottomTabNavigator({
          TrackListFlow:createStackNavigator({
