@@ -16,7 +16,6 @@ const signup = dispatch => {
       const response = await trackerApi.post('/signup', { email, password })
       console.log(response.data)
     } catch (err) {
-      console.log(err)
       dispatch({ type: 'add_error', payload: 'something went wrong with signup' })
     }
   };
